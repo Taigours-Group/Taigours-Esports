@@ -23,8 +23,8 @@
       "time": "04:00 PM",
       "prize": "NRS 1000/-",
       "image": "attached_assets/esports/Free Fire Competition 2.png",
-      "youtube": "https://youtube.com/live/J61WGIQUj9U?feature=share",
-      "facebook": "https://www.facebook.com/example2"
+      "youtube": "https://www.youtube.com/live/J61WGIQUj9U?si=ZgvblGzUmM51bUTX",
+      "facebook": "https://www.facebook.com/profile.php?id=61572485841102"
     },
 
     {
@@ -47,7 +47,7 @@
       {
         "rank": 1,
         "team": "Solo rusher",
-        "kill": "15",
+        "kill": "0",
         "wins": "0",
         "points": "--"
       }
