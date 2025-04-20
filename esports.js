@@ -42,6 +42,12 @@ function createTournamentCards(tournaments) {
         <i class="far fa-clock"></i>
         <span>${tournament.time}</span>
       </div>
+      <div class="tournament-info">
+        <i class="fa-solid fa-money-bill-wave"></i>
+        <span>${tournament.entryfee}</span>
+      </div>
+      
+
       <div class="tournament-prize">Prize Pool: ${tournament.prize}</div>
       <div class="tournament-actions">
         <a href="#contact" class="btn btn-sm">Participate</a>
