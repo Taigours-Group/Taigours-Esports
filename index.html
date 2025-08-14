@@ -3,198 +3,305 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="attached_assets/esports/logo.png" type="image/x-icon">
-  <title>Taigour's E-Sports - Forge Your Legacy, Rule the Game</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Taigour's E-Sports - Forge Your Legacy, Rule the Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/tiger-logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-
-<body class="branch-page esports-theme">
-  <header>
-    <div class="container">
-      <div class="logo">
-        <img src="attached_assets/esports/logo.png" alt="Taigour's Group Logo">
-      </div>
-      <div class="nav-buttons">
-        <button id="darkModeToggle" class="mode-toggle"><i class="fas fa-moon"></i></button>
-      </div>
-      <nav id="mobileNav">
-        <ul>
-          <li><a href="https://taigours-group.github.io/Taigours-Group/">Home</a></li>
-          <li><a href="https://taigours-group.github.io/Taigours-Esports/" class="active">E-Sports</a></li>
-          <li><a href="#">Music</a></li>
-          <li><a href="#">Store</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section class="branch-hero esports-hero">
-    <div class="container">
-      <h1>Taigour's E-Sports</h1>
-      <p>Forge Your Legacy, Rule the Game</p>
-    </div>
-  </section>
-
-  <section class="branch-about">
-    <div class="container">
-      <h2>About Our E-Sports Division</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>Taigours E-Sports is a powerhouse built for gamers who strive for greatness. Whether you're an aspiring pro or a casual competitor, our platform provides a high-stakes gaming experience where players can test their skills, participate in tournaments, and engage in competitive leagues. We are more than just a gaming brand—we are a community-driven esports ecosystem, designed to elevate gaming talent and bring the thrill of esports to the next level.</p>
-          <p>Our vision is to redefine gaming culture by offering a space where players can connect, compete, and grow. With a commitment to excellence, Taigours E-Sports is here to empower gamers, inspire champions, and create legendary moments in esports history. If you have the passion, we have the platform—it's time to rise and conquer!</p>
-        </div>
-        <div class="about-image">
-          <img src="attached_assets/esports/logo1.png" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="tournaments" id="tournaments">
-    <div class="container">
-      <h2>Upcoming Tournaments</h2>
-      <div id="tournaments-container" class="tournament-grid">
-        <!-- Tournament cards will be dynamically loaded here -->
-      </div>
-    </div>
-  </section>
-
-  <section class="leaderboard" id="leaderboard">
-    <div class="container">
-      <h2>Tournament Leaderboards</h2>
-      <div class="tab-container">
-        <div class="tabs">
-          <button class="tab-btn active" data-game="freefire">Free Fire</button>
-          <button class="tab-btn" data-game="pubg">PUBG</button>
-        </div>
-        <div class="tab-content active" id="freefire-leaderboard">
-          <div class="leaderboard-table-container">
-              <table class="leaderboard-table">
-                <thead>
-                  <tr>
-                    <th>Rank</th>
-                    <th>Team</th>
-                    <th>Kill</th>
-                    <th>Wins</th>
-                    <th>Points</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <!-- Free Fire leaderboard data will be dynamically loaded here -->
-                </tbody>
-              </table>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/tiger-logo.png" alt="Taigour's E-Sports Logo" class="logo-image">
+                <div class="logo-text-container">
+                    <span class="logo-text">Taigour's</span>
+                    <span class="logo-accent">E-Sports</span>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="tab-content" id="pubg-leaderboard">
-          <div class="leaderboard-table-container">
-            <div class="leaderboard-table-container">
-              <table class="leaderboard-table">
-                <thead>
-                  <tr>
-                    <th>Rank</th>
-                    <th>Team</th>
-                    <th>Kill</th>
-                    <th>Wins</th>
-                    <th>Points</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <!-- PUBG leaderboard data will be dynamically loaded here -->
-                </tbody>
-              </table>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#tournaments" class="nav-link">Tournaments</a></li>
+                <li><a href="#leaderboards" class="nav-link">Leaderboards</a></li>
+                <li><a href="#streams" class="nav-link">Streams</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <section class="contact branch-contact" id="contact">
-    <div class="container">
-      <h2>Join Our Tournaments</h2>
-      <p class="contact-intro">Interested in participating in our tournaments? Fill out the form below and our team will get in touch with you.</p>
-      <div class="contact-content">
-        <div class="contact-info">
-          <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <p>---------</p>
-          </div>
-          <div class="contact-item">
-            <i class="fab fa-whatsapp"></i>
-            <p><a href="https://wa.me/9864088891" target="_blank">+977 986-4088891</a></p>
-          </div>
-          <div class="contact-item">
-            <i class="fab fa-discord"></i>
-            <p>--------</p>
-          </div>
-        </div>
-        <div class="contact-form">
-          <form id="tournamentForm">
-            <input type="text" placeholder="Team Name" required>
-            <input type="text" placeholder="Team Captain" required>
-            <input type="email" placeholder="Email" required>
-            <input type="tel" placeholder="WhatsApp Number" required>
-            <select required>
-              <option value="" disabled selected>Select Game</option>
-              <option value="freefire">Free Fire</option>
-              <option value="pubg">PUBG</option>
-            </select>
-            <textarea placeholder="Additional Information" rows="3"></textarea>
-            <div class="terms-checkbox">
-              <input type="checkbox" id="termsCheckbox" required>
-              <label for="termsCheckbox">I agree to the<b><a href="esports-terms-and-conditions.html" target="_blank"> terms and conditions</a> .</b></label>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay">
+                <img src="images/herobg.png" alt="">
             </div>
-            <button type="submit" class="btn">Register Team</button>
-          </form>
         </div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-up">
+                <span class="glitch" data-text="Taigour's E-Sports">Taigour's E-Sports</span>
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                Forge Your Legacy, Rule the Game
+            </p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                <button class="cta-btn primary" title="Fill the form and join the tournament now" onclick="document.location.href='https://taigours-group.github.io/Free-Fire-Tournament-Registration---Taigours-E-Sports/'">
+                    <i class="fas fa-trophy"></i>
+                    Join Tournament
+                </button>
+                <button class="cta-btn secondary" title="Watch Live Now" onclick="document.location.href='#streams'">
+                    <i class="fas fa-play"></i>
+                    Watch Live
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Tournaments Section -->
+<section id="tournaments" class="tournaments">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">
+      <span class="title-accent">Upcoming</span> Tournaments
+    </h2>
+
+    <div class="tournament-tabs" data-aos="fade-up" data-aos-delay="200">
+      <button class="tab-btn" data-tab="freefire">
+        <i class="fas fa-fire"></i> Free Fire
+      </button>
+      <button class="tab-btn active" data-tab="pubg">
+        <i class="fas fa-crosshairs"></i> PUBG
+      </button>
+    </div>
+
+    <div class="tournament-grid" id="tournaments-container">
+      <!-- Tournament cards will be injected here -->
+    </div>
+  </div>
+</section>
+
+<!-- Leaderboards Section -->
+<section id="leaderboards" class="leaderboards">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">
+      <span class="title-accent">Global</span> Leaderboards
+    </h2>
+
+    <div class="leaderboard-tabs" data-aos="fade-up" data-aos-delay="200">
+      <button class="tab-btn active" data-tab="freefire-lb">
+        <i class="fas fa-fire"></i> Free Fire
+      </button>
+      <button class="tab-btn" data-tab="pubg-lb">
+        <i class="fas fa-crosshairs"></i> PUBG
+      </button>
+    </div>
+
+    <div class="leaderboard-content">
+      <!-- Free Fire Leaderboard -->
+      <div class="tab-content active" id="freefire-lb">
+        <!-- Table injected by JS -->
+      </div>
+
+      <!-- PUBG Leaderboard -->
+      <div class="tab-content" id="pubg-lb">
+        <!-- Table injected by JS -->
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <img src="attached_assets/esports/logo.png" alt="Taigour's e-sports Logo">
-          <p>Forge Your Legacy, Rule the Game</p>
-        </div><br>
-        <div class="footer-links">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="https://taigours-group.github.io/Taigours-Group/">Main Site</a></li>
-            <li><a href="#tournaments">Tournaments</a></li>
-            <li><a href="#leaderboard">Leaderboard</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><br>
-        <div class="footer-branches">
-          <h3>Our Companies</h3>
-          <ul>
-            <li><a href="https://taigours-group.github.io/Taigours-Esports/">Taigour's E-Sports</a></li>
-            <li><a href="#">Taigour's Music</a></li>
-            <li><a href="#">Taigour's Store</a></li>
-          </ul>
-        </div><br>
-        <div class="footer-social">
-          <h3>Follow Us</h3>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=61572485841102" class="fb" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="insta" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/@TaigoursE-Sports" class="YT" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="#" class="twitch" target="_blank"><i class="fab fa-twitch"></i></a>
-          </div>
+
+    <!-- Streams Section -->
+    <section id="streams" class="streams">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span class="title-accent">Live</span> Streams
+            </h2>
+            
+            <div class="streams-grid">
+                <div class="stream-main" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stream-player">
+                        <div class="live-badge">
+                            <i class="fas fa-circle"></i>
+                            LIVE NOW
+                        </div>
+                        <iframe width="100%" 
+                                src="https://www.youtube.com/embed/bCcaErhe8as?si=HF5pHtHFdrHhhJMJ&amp;autoplay=1&amp;mute=1" 
+                                title="Free Fire Championship Live Stream" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; picture-in-picture" 
+                                loading="lazy"
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                
+                <div class="stream-sidebar" data-aos="fade-up" data-aos-delay="400">
+                    <div class="upcoming-streams">
+                        <h3>Upcoming Highlights</h3>
+                        <div class="stream-item">
+                            <div class="stream-time">7:00 PM</div>
+                            <div class="stream-details">
+                                <span>The Battle of Champions</span>
+                                <small>1st Round</small>
+                            </div>
+                        </div>
+                        <div class="stream-item">
+                            <div class="stream-time">7:25 PM</div>
+                            <div class="stream-details">
+                                <span>The Battle of Champions</span>
+                                <small>Top 5</small>
+                            </div>
+                        </div>
+                        <div class="stream-item">
+                            <div class="stream-time">7:35 PM</div>
+                            <div class="stream-details">
+                                <span>The Battle of Champions</span>
+                                <small>Grand Final</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-box">
+                        <h3>Live Chat</h3>
+                        <div class="chat-messages">
+                            <div class="chat-message">
+                                <span class="username">TaiGaming:</span>
+                                <span>Let's go! 🔥</span>
+                            </div>
+                            <div class="chat-message">
+                                <span class="username">FireMaster:</span>
+                                <span>Amazing gameplay!</span>
+                            </div>
+                            <div class="chat-message">
+                                <span class="username">NeonKiller:</span>
+                                <span>GG WP 💯</span>
+                            </div>
+                             
+                            <!-- Messages will be injected by js here -->
+
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" id="streamChatInput" placeholder="Type your message...">
+                            <button onclick="sendStreamChatMessage()"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div><br>
-      <div class="footer-bottom">
-        <p>&copy; 2023 Taigour's Group. All Rights Reserved.</p>
-      </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="script.js"></script>
-  <script src="esports.js"></script>
-  <script src="sidebar.js"></script>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h2 class="section-title">
+                        About <span class="title-accent">Taigour's E-Sports</span>
+                    </h2>
+                    <p>
+                        Welcome to Taigour's E-Sports, where legends are born and champions rise. 
+                        We are a premier gaming organization dedicated to fostering competitive excellence 
+                        in the world of mobile gaming.
+                    </p>
+                    <p>
+                        Our mission is to create an inclusive, competitive environment where gamers can 
+                        showcase their skills, connect with fellow enthusiasts, and compete for glory. 
+                        From Free Fire to PUBG, we host tournaments that challenge players and celebrate 
+                        the spirit of e-sports.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Active Players</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Tournaments</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">रु 10K+</span>
+                            <span class="stat-label">Prize Pool</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left" data-aos-delay="400">
+                    <div class="image-container">
+                        <img src="images/logo1.png" alt="Gaming Setup">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">Taigour's</span>
+                        <span class="logo-accent">E-Sports</span>
+                    </div>
+                    <p>Forge Your Legacy, Rule the Game</p>
+                    <div class="social-links">
+                        <a href="https://discord.gg/txptFfUC"><i class="fab fa-discord"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61572485841102"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@TaigoursE-Sports"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#tournaments">Tournaments</a></li>
+                        <li><a href="#leaderboards">Leaderboards</a></li>
+                        <li><a href="#streams">Live Streams</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Games</h3>
+                    <ul>
+                        <li><a href="https://taigours-group.github.io/Tournament-Registration---Taigours-E-Sports/">Free Fire</a></li>
+                        <li><a href="https://taigours-group.github.io/Tournament-Registration---Taigours-E-Sports/">PUBG Mobile</a></li>
+                        <li><a href="#">Delta Force (comming soon)</a></li>
+                        <li><a href="#">Valorant</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i><a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsmFRhmwsqnGdkZXQzbDmZkfSRsvhWmlpmTDnCKMbjFqDrTzCDKmLDBBxNHkRFRxKGqfJZQq"> info@taigour-esports.com</a></li>
+                        <li><i class="fas fa-phone"></i><a href="https://api.whatsapp.com/send/?phone=9779766115626&text=Hello I just Visited Taigour E-Sports"> +977 9766115626</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i>Janakpur, Nepal</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Taigour's E-Sports. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
