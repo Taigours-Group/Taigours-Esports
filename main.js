@@ -10,11 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
     .catch(err => console.error('Failed to load data:', err));
 });
 
-function renderTournaments(tournaments, selectedGame = 'pubg') {
+function renderTournaments(tournaments, selectedGame = 'ludo') {
   const container = document.getElementById('tournaments-container');
   if (!container) return;
   container.innerHTML = '';
 
+  if (!tournaments[selectedGame]) return;
   tournaments[selectedGame].forEach((tournament, index) => {
     const card = createTournamentCard(tournament, index);
     container.appendChild(card);
@@ -70,12 +71,12 @@ function renderLeaderboards(leaderboards, selectedGame = 'freefire') {
     if (!container) return;
 
     if (game === selectedGame) {
-  container.classList.add('active');
-  container.style.display = 'block';
-} else {
-  container.classList.remove('active');
-  container.style.display = 'none';
-}
+      container.classList.add('active');
+      container.style.display = 'block';
+    } else {
+      container.classList.remove('active');
+      container.style.display = 'none';
+    }
 
     if (game !== selectedGame) return;
 
@@ -97,7 +98,7 @@ function renderLeaderboards(leaderboards, selectedGame = 'freefire') {
             <td>
               <div class="player-info">
                 <div class="player-avatar">
-                    <img src="${team.avatar || 'https://via.placeholder.com/32'}" alt="${team.teamName}">
+                  <img src="${team.avatar || 'https://via.placeholder.com/32'}" alt="${team.teamName}">
                 </div>
                 <span>${team.teamName}</span>
               </div>
