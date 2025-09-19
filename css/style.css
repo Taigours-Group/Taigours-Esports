@@ -594,6 +594,13 @@ h1, h2, h3 {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.game-tag.ludo {
+    background: linear-gradient(45deg, var(--tertiary), var(--primary));
+    color: var(--bg-dark);
+    font-weight: 800;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .card-content {
     padding: 1.5rem;
 }
