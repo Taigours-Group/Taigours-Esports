@@ -10,7 +10,7 @@
         "title": "Free Fire Tournament 2082 The Battle of Champions",
         "date": "Ended",
         "time": "07:00 PM",
-        "image": "./images/Free Fire Tournament.png",
+        "image": "../images/Free Fire Tournament.png",
         "location": "janakpur, Nepal",
         "prize": "रु 1,000",
         "entryFee": "100",
@@ -25,7 +25,7 @@
         "title": "Free Fire Last Survivor Tournament",
         "date": "Comming Soon",
         "time": "Comming Soon",
-        "image": "./images/Free Fire Tournament.png",
+        "image": "../images/Free Fire Tournament.png",
         "location": "janakpur, Nepal",
         "prize": "रु 10,000",
         "entryFee": "रु 999",
@@ -40,7 +40,7 @@
         "title": "Free Fire Final Showdown Tournament",
         "date": "Comming Soon",
         "time": "Comming Soon",
-        "image": "./images/Free Fire Tournament.png",
+        "image": "../images/Free Fire Tournament.png",
         "location": "Nepal",
         "prize": "रु 1,000",
         "entryFee": "रु 99",
@@ -59,7 +59,7 @@
         "title": "PUBG Global Championship 2021",
         "date": "Upcomming",
         "time": "7:00 PM",
-        "image": "./images/PUBG Tournament.png",
+        "image": "../images/PUBG Tournament.png",
         "location": "janakpur, Nepal",
         "prize": "रु 10,000",
         "entryFee": "रु 999",
@@ -74,7 +74,7 @@
         "title": "PUBG Asia Pacific Championship 2021",
         "date": "Comming Soon",
         "time": "Comming Soon",
-        "image": "./images/PUBG Tournament.png",
+        "image": "../images/PUBG Tournament.png",
         "location": "janakpur, Nepal",
         "prize": "रु 1000",
         "entryFee": "रु 99",
@@ -89,7 +89,7 @@
         "title": "PUBG Europe League 2021",
         "date": "Comming Soon",
         "time": "Comming Soon",
-        "image": "./images/PUBG Tournament.png",
+        "image": "../images/PUBG Tournament.png",
         "location": "janakpur, Nepal",
         "prize": "रु 20,000",
         "entryFee": "रु 12,000",
@@ -97,11 +97,54 @@
         "streamId": "comming soon.html"
       }
 
-    ]
-  
-},
+    ],
 
-"leaderboard": {
+    "ludo": [
+      {
+        "title": "Ludo Masters Cup",
+        "game": "Ludo",
+        "type": "ludo",
+        "image": "images/LUDO tournament.png",
+        "location": "Janakpur, Nepal",
+        "date": "2082-06-08",
+        "time": "7:00 PM",
+        "entryFee": "70",
+        "prize": "रु 1,100",
+        "registrationId": "https://taigours-group.github.io/Tournament-Registration---Taigours-E-Sports/",
+        "streamId": "bCcaErhe8as"
+      },
+
+      {
+        "title": "Ludo Championship",
+        "game": "Ludo",
+        "type": "ludo",
+        "image": "images/LUDO tournament.png",
+        "location": "Janakpur, Nepal",
+        "date": "Comming Soon",
+        "time": "Comming Soon",
+        "entryFee": "Free",
+        "prize": "रु 2,000",
+        "registrationId": "comming soon.html",
+        "streamId": "bCcaErhe8as"
+      },
+      {
+        "title": "Ludo Clash",
+        "game": "Ludo",
+        "type": "ludo",
+        "image": "images/LUDO tournament.png",
+        "location": "janakpur, Nepal",
+        "date": "Comming Soon",
+        "time": "7:00 PM",
+        "entryFee": "50",
+        "prize": "रु 1,500",
+        "registrationId": "comming soon.html",
+        "streamId": "bCcaErhe8as"
+      }
+      
+    ]
+  },
+
+  "leaderboard": {
 
   "freefire": [
     {
@@ -179,7 +222,30 @@
       "wins": 4,
       "kills": 210
     }
+  ],
+
+  "ludo": [
+    {
+      "teamName": "Ludo Legends",
+      "avatar": "images/ludo-team1.png",
+      "kills": 0,
+      "wins": 5,
+      "points": 150
+    },
+    {
+      "teamName": "Dice Rollers",
+      "avatar": "images/ludo-team2.png",
+      "kills": 0,
+      "wins": 3,
+      "points": 90
+    },
+    {
+      "teamName": "Board Masters",
+      "avatar": "images/ludo-team3.png",
+      "kills": 0,
+      "wins": 2,
+      "points": 60
+    }
   ]
  }
-
 }
