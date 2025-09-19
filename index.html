@@ -69,57 +69,70 @@
     </section>
 
     <!-- Tournaments Section -->
-<section id="tournaments" class="tournaments">
-  <div class="container">
-    <h2 class="section-title" data-aos="fade-up">
-      <span class="title-accent">Upcoming</span> Tournaments
-    </h2>
-
-    <div class="tournament-tabs" data-aos="fade-up" data-aos-delay="200">
-      <button class="tab-btn" data-tab="freefire">
-        <i class="fas fa-fire"></i> Free Fire
-      </button>
-      <button class="tab-btn active" data-tab="pubg">
-        <i class="fas fa-crosshairs"></i> PUBG
-      </button>
-    </div>
-
-    <div class="tournament-grid" id="tournaments-container">
-      <!-- Tournament cards will be injected here -->
-    </div>
-  </div>
-</section>
-
-<!-- Leaderboards Section -->
-<section id="leaderboards" class="leaderboards">
-  <div class="container">
-    <h2 class="section-title" data-aos="fade-up">
-      <span class="title-accent">Global</span> Leaderboards
-    </h2>
-
-    <div class="leaderboard-tabs" data-aos="fade-up" data-aos-delay="200">
-      <button class="tab-btn active" data-tab="freefire-lb">
-        <i class="fas fa-fire"></i> Free Fire
-      </button>
-      <button class="tab-btn" data-tab="pubg-lb">
-        <i class="fas fa-crosshairs"></i> PUBG
-      </button>
-    </div>
-
-    <div class="leaderboard-content">
-      <!-- Free Fire Leaderboard -->
-      <div class="tab-content active" id="freefire-lb">
-        <!-- Table injected by JS -->
+    <section id="tournaments" class="tournaments">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">
+          <span class="title-accent">Upcoming</span> Tournaments
+        </h2>
+  
+        <!-- Tournaments Tabs -->
+        <div class="tournament-tabs" data-aos="fade-up" data-aos-delay="200">
+          <button class="tab-btn" data-tab="freefire">
+            <i class="fas fa-fire"></i> Free Fire
+          </button>
+          <button class="tab-btn" data-tab="pubg">
+            <i class="fas fa-crosshairs"></i> PUBG
+          </button>
+          <button class="tab-btn active" data-tab="ludo">
+            <i class="fas fa-dice"></i> Ludo
+          </button>
+        </div>
+  
+        <div class="tournament-grid" id="tournaments-container">
+          <!-- Tournament cards will be injected here -->
+        </div>
       </div>
-
-      <!-- PUBG Leaderboard -->
-      <div class="tab-content" id="pubg-lb">
-        <!-- Table injected by JS -->
+    </section>
+  
+    <!-- Leaderboards Section -->
+    <section id="leaderboards" class="leaderboards">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">
+          <span class="title-accent">Global</span> Leaderboards
+        </h2>
+  
+        <!-- Leaderboard Tabs -->
+        <div class="leaderboard-tabs" data-aos="fade-up" data-aos-delay="200">
+          <button class="tab-btn active" data-tab="freefire-lb">
+            <i class="fas fa-fire"></i> Free Fire
+          </button>
+          <button class="tab-btn" data-tab="pubg-lb">
+            <i class="fas fa-crosshairs"></i> PUBG
+          </button>
+          <button class="tab-btn" data-tab="ludo-lb">
+            <i class="fas fa-dice"></i> Ludo
+          </button>
+        </div>
+  
+        <div class="leaderboard-content">
+          <!-- Free Fire Leaderboard -->
+          <div class="tab-content active" id="freefire-lb">
+            <!-- Table injected by JS -->
+          </div>
+  
+          <!-- PUBG Leaderboard -->
+          <div class="tab-content" id="pubg-lb">
+            <!-- Table injected by JS -->
+          </div>
+  
+          <!-- Ludo Leaderboard -->
+          <div class="tab-content" id="ludo-lb">
+            <!-- Table injected by JS -->
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-
+    </section>
+  
 
     <!-- Streams Section -->
     <section id="streams" class="streams">
