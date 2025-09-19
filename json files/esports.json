@@ -149,7 +149,7 @@
   "freefire": [
     {
       "id": 1,
-      "avatar": "./images/freefireavatar3.jpg",
+      "avatar": "images/freefireavatar3.jpg",
       "teamName": "Mʀ..ʀᴜᴅʀᴀ×͜×",
       "points": 1450,
       "wins": 1,
@@ -157,7 +157,7 @@
     },
     {
       "id": 2,
-      "avatar": "./images/freefireavatar1.jpg",
+      "avatar": "images/freefireavatar1.jpg",
       "teamName": "WHØㅤMÄNISH",
       "points": 1500,
       "wins": 0,
@@ -165,7 +165,7 @@
     },
     {
       "id": 3,
-      "avatar": "./images/freefireavatar1.jpg",
+      "avatar": "images/freefireavatar1.jpg",
       "teamName": "COMRADEㅤGꔪ",
       "points": 1100,
       "wins": 0,
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "avatar": "./images/freefireavatar1.jpg",
+      "avatar": "images/freefireavatar1.jpg",
       "teamName": "RꪜㅤMᴀᴅᴀʀᴀㅤꔪ",
       "points": 1100,
       "wins": 0,
@@ -181,7 +181,7 @@
     },
     {
       "id": 5,
-      "avatar": "./images/freefireavatar2.jpg",
+      "avatar": "images/freefireavatar2.jpg",
       "teamName": "༄ᶦᶰᵈ᭄IMRAN☂☂",
       "points": 1100,
       "wins": 0,
@@ -189,7 +189,7 @@
     },
     {
       "id": 6,
-      "avatar": "./images/freefireavatar1.jpg",
+      "avatar": "images/freefireavatar1.jpg",
       "teamName": "NG✓Sᴀᴛʏᴀᴍㅤꔪㅤ",
       "points": 1100,
       "wins": 0,
@@ -200,7 +200,7 @@
   "pubg": [
     {
       "id": 1,
-      "avatar": "./images/pubgavatar1.jpg",
+      "avatar": "images/pubgavatar1.jpg",
       "teamName": "Team X",
       "points": 2000,
       "wins": 6,
@@ -208,7 +208,7 @@
     },
     {
       "id": 2,
-      "avatar": "./images/pubgavatar2.jpg",
+      "avatar": "images/pubgavatar2.jpg",
       "teamName": "Team Y",
       "points": 1900,
       "wins": 5,
@@ -216,7 +216,7 @@
     },
     {
       "id": 3,
-      "avatar": "./images/pubgavatar3.jpg",
+      "avatar": "images/pubgavatar3.jpg",
       "teamName": "Team Z",
       "points": 1800,
       "wins": 4,
@@ -249,4 +249,5 @@
   ]
  }
 }
+
 
